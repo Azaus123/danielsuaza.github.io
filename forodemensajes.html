@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Suaza Varela Blog</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div id="sidebar">
+      <div class="toggle-btn">
+        <span>&#9776;</span>
+      </div>
+      <ul>
+        <li>
+          <img src="imágenes/pp.jpg" alt="logotipo" class="logotipo">
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="datosbiograficos.html">Datos biográficos</a></li>
+        <li><a href="experiencias.html">Experiencias</a></li>
+        <li><a href="lineadetiempo.html">Linea de tiempo</a></li>
+        <li><a href="materialdeinteres.html">Material de interés</a></li>
+        <li><a href="forodemensajes.html">Foro de mensajes</a></li>
+        <button class="switch" id="switch">
+          <div class="span">
+            <span><i class="fas fa-moon"></i></span>
+          </div>
+          <div class="span2">
+            <span><i class="fas fa-sun"></i></span>
+          </div>
+
+        </button>
+
+      </ul>
+
+    </div>
+
+    <div class="container logo-nav-container">
+      <a href="#" class="logo">mi blog</a>
+      <span class="menu-icon">Ver menú</span>
+      <nav class="navigation">
+        <ul class="show">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="datosbiograficos.html">Datos biográficos</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+          <li><a href="lineadetiempo.html">Linea de tiempo</a></li>
+          <li><a href="materialdeinteres.html">Material de interés</a></li>
+          <li><a href="forodemensajes.html">Foro de mensajes</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="switch-texto">
+        <h5>Añade un comentario</h5>
+      <div class="comment">
+        <textarea id="title" type="text" rows="5" cols="30" placeholder="Pon tu comentario aquí....... Recuerda que el número máximo de caracteres es de 40" maxlength="40"></textarea>
+        Dale clic a este botón para enviar:<input type="submit" value="Post" onclick="insert()" style="width:20px;">
+      </div>
+      <div id="display"></div>
+
+
+
+      </div>
+      
+
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>Página diseñada por Daniel Suaza</p>
+    </div>
+
+  </footer>
+  <script src="scripts.js" charset="UTF-8"></script>
+</body>
+
+</html>

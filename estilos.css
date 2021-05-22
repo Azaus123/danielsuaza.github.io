@@ -1,0 +1,298 @@
+/*caracteristicas de la barra*/
+
+body{
+   font-family: 'Girassol', cursive, 'Times New Roman', Times, serif;
+   color: white;
+   font-size: 1.2rem;
+   line-height: 1.6em;
+   margin: 0;
+   background: #092c3e;
+}
+body.dark{
+   background: #ffffff;
+   color: #092c3e;
+}
+h1{
+   line-height: 1.3em;
+   font-size: 2rem;
+   font-family: 'Girassol';
+ 
+}
+
+p{
+   margin-bottom: 1.6em;
+   font-family: 'Shadows Into Light', cursive;
+
+}
+.container {
+   width: 85%;
+   max-width: 850px;
+   margin: 0% auto;
+}
+
+.header{
+   background: green;
+   color: white;
+   padding: 2.3rem 0;
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+}
+.header a{
+   color: white;
+   text-decoration: none;
+}
+
+.logo-nav-container{
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.logo {
+   letter-spacing: 15px;
+   font-size: 1.2em;
+   
+}
+.menu-icon {
+   display: none;
+}
+.navigation ul{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.navigation ul li{
+   display: inline-block;
+}
+.navigation ul li a{
+   display: block;
+   padding: 0.5rem 1rem;
+   transition: all 0.4s linear;
+   border-radius: 5px;
+}
+.navigation ul li a:hover{
+   background: rgb(182, 106, 106) ;
+}
+.main{
+   padding-top: 12rem;
+}
+#sidebar{
+   position: fixed;
+   width: 237px;
+   height: 100%;
+   background: #151719;
+   left: -238px;
+   transition: all 500ms linear;
+
+}
+#sidebar.active{
+   left: 0;
+}
+#sidebar ul li{
+   color: rgba(230, 230, 230, .9);
+   text-align: center;
+   border-bottom: 1px solid rgba(100, 100, 100, .3);
+   padding: 15px 10px;
+   list-style: none;
+}
+.logotipo{
+   border-radius: 50%;
+   display: block;
+   margin: 0% auto;
+}
+#sidebar .toggle-btn{
+   position: absolute;
+   left: 230px;
+   top: 20px;
+   cursor: pointer;
+}
+#sidebar .toggle-btn span{
+   display: block;
+   width: 40px;
+   text-align: center;
+   font-size: 30px;
+}
+.footer {
+   background: gray;
+   padding: 2rem 0;
+   text-align: center;
+   margin-top: 6rem;
+}
+
+/*Aquí empizan las caracteristicas de la tabla*/
+* {
+   font-family: sans-serif; 
+ }
+ 
+ .content-table {
+   border-collapse: collapse;
+   margin: 25px 0;
+   font-size: 0.9em;
+   min-width: 400px;
+   border-radius: 5px 5px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .content-table thead tr {
+   background-color: #009879;
+   color: #ffffff;
+   text-align: left;
+   font-weight: bold;
+ }
+ 
+ .content-table th,
+ .content-table td {
+   padding: 12px 15px;
+
+ }
+ 
+ .content-table tbody tr {
+   border-bottom: 1px solid #dddddd;
+ }
+ 
+ 
+ .content-table tbody tr:last-of-type {
+   border-bottom: 2px solid #009879;
+ }
+
+ /*modo nocturno*/
+
+.switch{
+   background: #343d53;
+   border-radius: 1000px;
+   border: none;
+   position: relative;
+   cursor: pointer;
+   display: flex;
+   outline: none;
+}
+
+.span{
+   width: 20px;
+   height: 15px;
+   line-height: 30px;
+   padding: 33px;
+   display: block;
+   background: none;
+   color: #fff;
+}
+.span2{
+   width: 20px;
+   height: 15px;
+   line-height: 30px;
+   padding: 33px;
+   display: block;
+   background: none;
+   color: #fff;
+}
+
+
+
+
+
+
+
+/*line de tiempo*/
+.container-tiempo{
+   box-sizing: border-box;
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.timeline{
+   width: 80%;
+   height: auto;
+   max-width: 0 auto;
+}
+.timeline ul{
+   list-style: none;
+}
+.timeline ul li{
+   padding: 20px;
+   background-color: #1e1f22;
+   color: white;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+.timeline ul li:last-child{
+   margin-bottom: 0;
+}
+.timeline-content h1{
+   font-size: 25px;
+   font-weight: 500;
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+.timeline-content p{
+   font-size: 16px;
+   line-height: 30px;
+   font-weight: 300;
+}
+
+.timeline-content .fecha{
+   font-size: 13px;
+   font-weight: 300;
+   margin-bottom: 10px;
+   letter-spacing: 2px;
+  
+}
+.timeline ul li{
+      width: 50%;
+      margin-bottom: 50px;
+   }
+.timeline ul li:nth-child(odd){
+      float: left;
+      clear: right;
+    
+   }
+.timeline ul li:nth-child(even){
+      float: right;
+      clear: left;
+     
+   }
+
+
+   /*experiencias*/
+
+   .indice a{
+      color: aquamarine;
+   }
+
+
+/*mensajes*/
+   .form{
+      padding: 10px;
+      border: 1px solid #030;
+      margin-bottom: 10px;
+
+}
+.form input[type="text"], .form textarea, .form input[type="date"]{
+   border: 1px solid #383833;
+   padding: 2px;
+   width: 300px;
+}
+
+#bodytext{
+   width: 80%;
+   height: 80px;
+}
+
+
+/*material de interés*/
+
+.imagenes:hover{
+   cursor: pointer;
+   border: red solid;
+
+}
+
+.ralph{
+   color: aquamarine;
+}
